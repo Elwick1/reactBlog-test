@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css'
 import PostContainer from './PostContainer';
 
 const posts = 'http://localhost:3000/posts'

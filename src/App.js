@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Posts from './Posts';
+import Posts from './Posts/Posts';
 
 
 
