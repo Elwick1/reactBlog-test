@@ -13,7 +13,8 @@ import Posts from './Posts/Posts';
 export default class App extends React.Component {
 
   state = {
-    showPosts : false
+    showPosts : false,
+    
   };
   
   handleClick = () => {
@@ -21,6 +22,8 @@ export default class App extends React.Component {
       showPosts : !this.state.showPosts
     })
   }
+
+  
 
   render() {
   return (

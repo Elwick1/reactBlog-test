@@ -24,4 +24,54 @@
   color: rgb(2, 0, 0);
 }
 
+.sidebar {
+  min-height: 100vh;
+  min-width: 12em;
+  width: 28%;
+  border-right: solid black 1px;
+  background: #e5fdff;
+  padding: 1em;
+}
 
+.sidebar > button {
+  width: 100%;
+}
+
+.posts-container {
+  max-width: 30em;
+  margin: auto;
+}
+
+.posts-container > div {
+  border-bottom: solid 1px grey;
+  padding-bottom: 1em;
+  min-width: 20em;
+}
+
+.posts-container > div > button {
+  min-width: 4em;
+}
+
+form.new-post-form {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+form.new-post-form > input,
+form.new-post-form > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+input[type="submit"],
+button {
+  font-weight: bold;
+  font-size: 1em;
+  background: white;
+  border: solid black 1px;
+  padding: 0.5em;
+  cursor: pointer;
+}
