@@ -4,6 +4,7 @@ import NewPostForm from './NewPostForm';
 
 const posts = 'http://localhost:3000/posts'
 
+
 export default class Posts extends React.Component {
 
   state = {
@@ -46,11 +47,11 @@ export default class Posts extends React.Component {
     render() {
     return (
       <div className="Post-View">
-        <PostContainer posts={this.state.posts}/>
         <div className="sidebar">
           <button onClick={() => this.handleClicks()}>Show/hide new post form</button>
           {this.state.showForm === true ? <NewPostForm addNewPost={this.addNewPost}/> : false}
         </div> 
+        <PostContainer posts={this.state.posts}/>
       </div>
     );
   }

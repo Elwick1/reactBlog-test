@@ -24,14 +24,11 @@
   color: rgb(2, 0, 0);
 }
 
-.sidebar {
+/* .sidebar {
   min-height: 100vh;
   min-width: 12em;
-  width: 28%;
-  border-right: solid black 1px;
-  background: #e5fdff;
-  padding: 1em;
-}
+  
+} */
 
 .sidebar > button {
   width: 100%;
@@ -49,12 +46,14 @@
 }
 
 .posts-container > div > button {
-  min-width: 4em;
+  min-width: 5em;
+  padding-bottom: 1em;
+  margin: auto;
 }
 
 form.new-post-form {
   border: solid black 1px;
-  padding: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
 }
