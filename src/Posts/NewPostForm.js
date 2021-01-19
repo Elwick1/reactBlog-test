@@ -15,18 +15,11 @@ export default class NewPostForm extends React.Component {
       };
 
       handleBodyChange = (e) => {
-        //   console.log(e.target.value)
+          console.log(e.target.value)
           this.setState({
               body : e.target.value
           })
-      }
-
-    //   handleBodyChange = (e) => {
-    //     console.log(e.target.value)
-    //     this.setState({
-    //       body : e.target.value
-    //     })
-    //   };
+      };
 
       handleSubmit = (e) => {
         e.preventDefault()
@@ -39,8 +32,7 @@ export default class NewPostForm extends React.Component {
         return (
           <form className="new-post-form" onSubmit={this.handleSubmit}>
             <input placeholder="Title" onChange={this.handleTitleChange}/>
-            {/* <input placeholder="Body" onChange={(e) => this.handleBodyChange(e.target.value)}/> */}
-            <textarea placeholder="Write your masterpiece here..." rows={10} onChange={(e) => this.handleBodyChange(e.target.value)}/>
+            <textarea placeholder="Write Your Post Here" onChange={this.handleBodyChange}/>
             <input type="submit" value="Share your masterpiece" />
           </form>
         );
